@@ -1,14 +1,11 @@
 package com.ppiyong.e312.config;
 
 import com.ppiyong.e312.jwt.JwtRequestFilter;
-import com.ppiyong.e312.repository.UserRepository;
-import com.ppiyong.e312.service.OAuthService;
-import lombok.RequiredArgsConstructor;
+import com.ppiyong.e312.member.repository.UserRepository;
+import com.ppiyong.e312.auth.OAuthService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;

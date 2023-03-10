@@ -1,8 +1,7 @@
 package com.ppiyong.e312.auth;
 
-import com.ppiyong.e312.entity.User;
+import com.ppiyong.e312.member.entity.User;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
