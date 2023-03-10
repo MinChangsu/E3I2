@@ -2,7 +2,7 @@ package com.ppiyong.e312.jwt;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.ppiyong.e312.entity.User;
+import com.ppiyong.e312.member.entity.User;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
