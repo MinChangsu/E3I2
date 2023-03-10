@@ -1,7 +1,7 @@
 package com.ppiyong.e312.config;
 
 import com.ppiyong.e312.auth.PrincipalDetails;
-import com.ppiyong.e312.entity.User;
+import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.jwt.JwtProperties;
 import com.ppiyong.e312.jwt.JwtProvider;
 import lombok.RequiredArgsConstructor;
@@ -10,7 +10,6 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
