@@ -39,22 +39,26 @@ public class PostService {
 
         return post;
     }
+
     @Transactional
     public PostDto getPost(int num) {
         Optional<Post> postbox = postRepository.findById(num);
         if (postbox.isPresent()) {
 
             Post post = postbox.get();
+            int hit = post.getHit();
+            post.setHit(hit + 1);
             PostDto postDto = new PostDto(post);
+            postRepository.save(post);
             return postDto;
 
         } else return null;
     }
 
-    public List<PostDto> getPostAll(Pageable pageable,String title) {
+    public List<PostDto> getPostAll(Pageable pageable, String title) {
 
 
-        Page<Post> list = postRepository.findAllByTitleContaining(pageable,title);
+        Page<Post> list = postRepository.findAllByTitleContaining(pageable, title);
         List<PostDto> list_ = new ArrayList<>();
 
         for (Post p : list) {
