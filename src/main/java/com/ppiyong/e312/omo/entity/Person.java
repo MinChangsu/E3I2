@@ -16,6 +16,7 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String title;
     private String road1;
     private String road1_mafia;
     private String road2;

@@ -31,9 +31,10 @@ public class SecurityConfig {
 
                 .authorizeRequests()
 
-                .antMatchers("/", "/hello","/*")
+                .antMatchers("/", "/hello")
                 .permitAll()
-
+                .antMatchers("/user")
+                .hasRole("user")
                 .anyRequest()
                 .authenticated()
                 .and()

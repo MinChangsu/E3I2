@@ -4,6 +4,7 @@ import com.ppiyong.e312.auth.PrincipalDetails;
 import com.ppiyong.e312.post.entity.Post;
 import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.post.model.PostDto;
+import com.ppiyong.e312.post.model.PostResponseDto;
 import com.ppiyong.e312.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -27,7 +28,7 @@ public class PostService {
         return null;
     }
 
-    public Post createPost(Post post) {
+    public PostResponseDto createPost(Post post) {
 
 
         PrincipalDetails principalDetails = (PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -35,21 +36,23 @@ public class PostService {
         System.out.println("user = " + user);
         post.setUser(user);
         postRepository.save(post);
+        PostResponseDto postdto=new PostResponseDto(post);
 
 
-        return post;
+        return postdto;
     }
 
     @Transactional
-    public PostDto getPost(int num) {
+    public PostResponseDto getPost(int num) {
         Optional<Post> postbox = postRepository.findById(num);
         if (postbox.isPresent()) {
 
             Post post = postbox.get();
             int hit = post.getHit();
             post.setHit(hit + 1);
-            PostDto postDto = new PostDto(post);
+            PostResponseDto postDto = new PostResponseDto(post);
             postRepository.save(post);
+
             return postDto;
 
         } else return null;
