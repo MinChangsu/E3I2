@@ -9,6 +9,7 @@ import com.ppiyong.e312.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,8 +44,8 @@ public class PostService {
     }
 
     @Transactional
-    public PostResponseDto getPost(int num) {
-        Optional<Post> postbox = postRepository.findById(num);
+    public PostResponseDto getPost(int id) {
+        Optional<Post> postbox = postRepository.findById(id);
         if (postbox.isPresent()) {
 
             Post post = postbox.get();
@@ -58,17 +59,28 @@ public class PostService {
         } else return null;
     }
 
-    public List<PostDto> getPostAll(Pageable pageable, String title) {
+    public List<PostResponseDto> getPostAll(Pageable pageable, String title) {
 
 
         Page<Post> list = postRepository.findAllByTitleContaining(pageable, title);
-        List<PostDto> list_ = new ArrayList<>();
+        List<PostResponseDto> list_ = new ArrayList<>();
 
         for (Post p : list) {
-            list_.add(new PostDto(p));
+            list_.add(new PostResponseDto(p));
         }
-        System.out.println("list = " + list_);
+
         return list_;
     }
 
+    public ResponseEntity update(int id, PostResponseDto postResponseDto) {
+        Post post=postRepository.findById(id).get();
+        post.update(postResponseDto.getTitle(),postResponseDto.getContent());
+        postRepository.save(post);
+        return ResponseEntity.ok(null);
+    }
+
+    public ResponseEntity delete(int id) {
+        postRepository.deleteById(id);
+        return ResponseEntity.ok("good");
+    }
 }

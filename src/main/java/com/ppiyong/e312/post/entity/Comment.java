@@ -1,10 +1,7 @@
 package com.ppiyong.e312.post.entity;
 
 import com.ppiyong.e312.member.entity.User;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -17,6 +14,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @Data
 @Entity
+@ToString(exclude = "post")
 public class Comment {
 
     @Id
@@ -41,4 +39,8 @@ public class Comment {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user; // 작성자
+
+    public void update(String content) {
+this.content = content;
+}
 }

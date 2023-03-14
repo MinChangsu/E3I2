@@ -30,11 +30,10 @@ public class SecurityConfig {
 
 
                 .authorizeRequests()
-
                 .antMatchers("/", "/hello")
                 .permitAll()
                 .antMatchers("/user")
-                .hasRole("user")
+                .hasAuthority("USER")
                 .anyRequest()
                 .authenticated()
                 .and()
@@ -47,7 +46,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .oauth2Login() // OAuth2 로그인 설정 시작점
-                .loginPage("http://localhost:3000")
+//                .loginPage("http://localhost:3000")
                 .userInfoEndpoint() // OAuth2 로그인 성공 이후 사용자 정보를 가져올 때 설정 담당
                 .userService(oAuthService)
                 .and()

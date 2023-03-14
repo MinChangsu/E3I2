@@ -17,6 +17,7 @@ public class UserService {
     @Transactional
     public UserDto getUser(int id) {
         Optional<User> user = userRepository.findById(id);
+
         if (user.isPresent()) {
 
 

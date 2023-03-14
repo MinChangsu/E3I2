@@ -34,4 +34,9 @@ this.hit = post.getHit();
 this.userId = post.getUser().getId();
 this.comments = post.getComments()==null?new ArrayList<CommentResponseDto>():post.getComments().stream().map(CommentResponseDto::new).collect(Collectors.toList());
 }
+
+        public PostResponseDto(String title, String content) {
+                this.title = title;
+                this.content = content;
+        }
 }
