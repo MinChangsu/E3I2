@@ -18,8 +18,9 @@ private final UserService userService;
 
           int id_=Integer.parseInt(id);
 
+         UserDto user=userService.getUser(id_);
 
-        return userService.getUser(id_);
+        return user;
 
     }
     @GetMapping("/user1")
