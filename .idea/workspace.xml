@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat]cctv브랜치 시범운영">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" afterDir="false" />
-    </list>
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] user 권한반환 함수 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678847077603</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[feat] user 권한반환 함수 추가">
+      <created>1678860169568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678860169568</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +175,7 @@
     <MESSAGE value="[feat]post crud 구현&#10;PostService 의 delete,update 메소드 추가" />
     <MESSAGE value="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가" />
     <MESSAGE value="[feat]cctv브랜치 시범운영" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]cctv브랜치 시범운영" />
+    <MESSAGE value="[feat] user 권한반환 함수 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] user 권한반환 함수 추가" />
   </component>
 </project>
