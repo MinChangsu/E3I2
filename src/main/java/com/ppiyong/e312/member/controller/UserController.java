@@ -23,6 +23,11 @@ private final UserService userService;
         return user;
 
     }
+    @GetMapping("/userRole")
+    public String userRole(){
+
+        return userService.getUserRole();
+    }
     @GetMapping("/user1")
     public String userController() {
 

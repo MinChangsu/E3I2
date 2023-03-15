@@ -4,48 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71cb754f-d20f-4d93-9bcb-dcba8f7d2b60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71cb754f-d20f-4d93-9bcb-dcba8f7d2b60/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71cb754f-d20f-4d93-9bcb-dcba8f7d2b60/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71cb754f-d20f-4d93-9bcb-dcba8f7d2b60/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/71cb754f-d20f-4d93-9bcb-dcba8f7d2b60/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat]cctv브랜치 시범운영">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/E312Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/GoogleUserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/KakaoUserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/NaverUserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/OAuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/PrincipalDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/OAuth2AuthenticationSuccessHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtRequestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/model/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Streaming.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/CommentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/PostController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment$CommentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post$PostBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/TimeEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto$CommentRequestDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostResponseDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/CommentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/PostService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature_changsu_comment" />
+        <entry key="$PROJECT_DIR$" value="feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -172,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678843560419</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[feat]cctv브랜치 시범운영">
+      <created>1678846675602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678846675602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[feat]cctv브랜치 시범운영">
+      <created>1678847077603</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678847077603</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +175,7 @@
     <MESSAGE value="[feat]댓글작성 구현&#10;Comment entity 생성&#10;CommentService 의 createComment 메소드에 댓글생성 기능 추가" />
     <MESSAGE value="[feat]post crud 구현&#10;PostService 의 delete,update 메소드 추가" />
     <MESSAGE value="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가" />
+    <MESSAGE value="[feat]cctv브랜치 시범운영" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]cctv브랜치 시범운영" />
   </component>
 </project>
