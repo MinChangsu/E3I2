@@ -29,7 +29,7 @@ public class SecurityConfig {
         http
 
                 .authorizeRequests()
-                .antMatchers("/", "/hello")
+                .antMatchers("/", "/hello","hi")
                 .permitAll()
                 .antMatchers("/user")
                 .hasAuthority("USER")
