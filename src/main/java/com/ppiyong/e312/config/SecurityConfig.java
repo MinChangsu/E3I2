@@ -28,12 +28,11 @@ public class SecurityConfig {
 
         http
 
-
                 .authorizeRequests()
-
-                .antMatchers("/", "/hello","/*")
+                .antMatchers("/", "/hello","hi")
                 .permitAll()
-
+                .antMatchers("/user")
+                .hasAuthority("USER")
                 .anyRequest()
                 .authenticated()
                 .and()
@@ -46,13 +45,11 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .oauth2Login() // OAuth2 로그인 설정 시작점
-                .loginPage("http://localhost:3000")
+//                .loginPage("http://localhost:3000")
                 .userInfoEndpoint() // OAuth2 로그인 성공 이후 사용자 정보를 가져올 때 설정 담당
                 .userService(oAuthService)
                 .and()
                 .successHandler(oAuth2AuthenticationSuccessHandler); // JWT authentication token을 만들고, client가 정의한 redirect로 token을 갖고 넘어감
-
-
         // OAuth2 로그인 성공 시, 후작업을 진행할 UserService 인터페이스 구현체 등록
         return http.build();
     }
