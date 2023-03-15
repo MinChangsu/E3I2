@@ -24,10 +24,6 @@ import java.util.Optional;
 public class PostService {
     private final PostRepository postRepository;
 
-    public List<Post> getPostAll() {
-
-        return null;
-    }
 
     public PostResponseDto createPost(Post post) {
 
@@ -62,7 +58,7 @@ public class PostService {
     public List<PostResponseDto> getPostAll(Pageable pageable, String title) {
 
 
-        Page<Post> list = postRepository.findAllByTitleContaining(pageable, title);
+        Page<Post> list = postRepository.findAllByTitleContainingAndCategory(pageable, title,"자유게시판");
         List<PostResponseDto> list_ = new ArrayList<>();
 
         for (Post p : list) {
@@ -82,5 +78,16 @@ public class PostService {
     public ResponseEntity delete(int id) {
         postRepository.deleteById(id);
         return ResponseEntity.ok("good");
+    }
+
+    public List<PostResponseDto> getReportPostAll(Pageable pageable, String title) {
+        Page<Post> list = postRepository.findAllByTitleContainingAndCategory(pageable, title,"신고게시판");
+        List<PostResponseDto> list_ = new ArrayList<>();
+
+        for (Post p : list) {
+            list_.add(new PostResponseDto(p));
+        }
+
+        return list_;
     }
 }

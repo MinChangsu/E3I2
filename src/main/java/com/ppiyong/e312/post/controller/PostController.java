@@ -41,6 +41,16 @@ public class PostController {
 
         return postService.getPostAll(pageable,title);
     }
+    @Transactional
+    @GetMapping("/report-postAll")
+    public List<PostResponseDto> reportpostAll(
+            @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC)
+            Pageable pageable,
+            @RequestParam(required=false,defaultValue="")
+            String title){
+
+        return postService.getReportPostAll(pageable,title);
+    }
     @PutMapping("/post")
     public ResponseEntity postUpdate(@RequestParam int id, @RequestBody PostResponseDto postResponseDto){
         return postService.update(id,postResponseDto);

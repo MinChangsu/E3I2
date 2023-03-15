@@ -28,7 +28,6 @@ public class SecurityConfig {
 
         http
 
-
                 .authorizeRequests()
                 .antMatchers("/", "/hello")
                 .permitAll()
@@ -51,8 +50,6 @@ public class SecurityConfig {
                 .userService(oAuthService)
                 .and()
                 .successHandler(oAuth2AuthenticationSuccessHandler); // JWT authentication token을 만들고, client가 정의한 redirect로 token을 갖고 넘어감
-
-
         // OAuth2 로그인 성공 시, 후작업을 진행할 UserService 인터페이스 구현체 등록
         return http.build();
     }
