@@ -27,7 +27,12 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http, AuthenticationManager authenticationManager) throws Exception {
 
         http
-
+                .csrf().disable()
+                .httpBasic().disable()
+                .formLogin().disable()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
                 .authorizeRequests()
                 .antMatchers("/", "/hello","/hi")
                 .permitAll()
@@ -38,14 +43,8 @@ public class SecurityConfig {
                 .and()
                 .addFilter(new JwtRequestFilter(authenticationManager, userRepository))
                 .addFilter(corsConfig.corsFilter())
-                .csrf().disable()
-                .httpBasic().disable()
-                .formLogin().disable()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
                 .oauth2Login() // OAuth2 로그인 설정 시작점
-//                .loginPage("http://localhost:3000")
+                .loginPage("http://localhost:3000")
                 .userInfoEndpoint() // OAuth2 로그인 성공 이후 사용자 정보를 가져올 때 설정 담당
                 .userService(oAuthService)
                 .and()
