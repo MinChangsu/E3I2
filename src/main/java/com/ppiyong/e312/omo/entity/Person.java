@@ -5,6 +5,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -24,5 +25,5 @@ public class Person {
     private String road4;
     private String road4_mafia;
     @CreationTimestamp
-    private Timestamp create_at;
+    private LocalDateTime create_at;
 }

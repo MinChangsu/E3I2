@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -19,6 +20,6 @@ public class Streaming {
     private String road;
 
     @CreationTimestamp
-    private Timestamp create_at;
+    private LocalDateTime create_at;
 
 }
