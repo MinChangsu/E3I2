@@ -67,6 +67,38 @@ public class PostService {
 
         return list_;
     }
+    public List<PostResponseDto> getPostAll(String title) {
+
+
+        List<Post> list = postRepository.findAllByTitleContainingAndCategory(title,"자유게시판");
+        List<PostResponseDto> list_ = new ArrayList<>();
+
+        for (Post p : list) {
+            list_.add(new PostResponseDto(p));
+        }
+
+        return list_;
+    }
+    public List<PostResponseDto> getReportPostAll(Pageable pageable, String title) {
+        Page<Post> list = postRepository.findAllByTitleContainingAndCategory(pageable, title,"신고게시판");
+        List<PostResponseDto> list_ = new ArrayList<>();
+
+        for (Post p : list) {
+            list_.add(new PostResponseDto(p));
+        }
+
+        return list_;
+    }
+    public List<PostResponseDto> getReportPostAll(String title) {
+        List<Post> list = postRepository.findAllByTitleContainingAndCategory( title,"신고게시판");
+        List<PostResponseDto> list_ = new ArrayList<>();
+
+        for (Post p : list) {
+            list_.add(new PostResponseDto(p));
+        }
+
+        return list_;
+    }
 
     public ResponseEntity update(int id, PostResponseDto postResponseDto) {
         Post post=postRepository.findById(id).get();
@@ -80,14 +112,5 @@ public class PostService {
         return ResponseEntity.ok("good");
     }
 
-    public List<PostResponseDto> getReportPostAll(Pageable pageable, String title) {
-        Page<Post> list = postRepository.findAllByTitleContainingAndCategory(pageable, title,"신고게시판");
-        List<PostResponseDto> list_ = new ArrayList<>();
 
-        for (Post p : list) {
-            list_.add(new PostResponseDto(p));
-        }
-
-        return list_;
-    }
 }

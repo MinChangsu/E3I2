@@ -32,7 +32,7 @@ public class PostController {
         return postService.getPost(id);
     }
     @Transactional
-    @GetMapping("/postAll")
+    @GetMapping("/pagePostAll")
     public List<PostResponseDto> postAll(
             @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC)
             Pageable pageable,
@@ -42,7 +42,15 @@ public class PostController {
         return postService.getPostAll(pageable,title);
     }
     @Transactional
-    @GetMapping("/report-postAll")
+    @GetMapping("/postAll")
+    public List<PostResponseDto> postAll(
+            @RequestParam(required=false,defaultValue="")
+            String title){
+
+        return postService.getPostAll(title);
+    }
+    @Transactional
+    @GetMapping("/pageReport-postAll")
     public List<PostResponseDto> reportpostAll(
             @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC)
             Pageable pageable,
@@ -50,6 +58,14 @@ public class PostController {
             String title){
 
         return postService.getReportPostAll(pageable,title);
+    }
+    @Transactional
+    @GetMapping("/report-postAll")
+    public List<PostResponseDto> reportpostAll(
+            @RequestParam(required=false,defaultValue="")
+            String title){
+
+        return postService.getReportPostAll(title);
     }
     @PutMapping("/post")
     public ResponseEntity postUpdate(@RequestParam int id, @RequestBody PostResponseDto postResponseDto){

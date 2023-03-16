@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] user 권한반환 함수 추가" />
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] user 권한반환 함수 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/PostService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature" />
+        <entry key="$PROJECT_DIR$" value="feature_changsu_omo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
