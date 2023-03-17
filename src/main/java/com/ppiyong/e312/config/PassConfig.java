@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Configuration
 public class PassConfig {
+
     @Bean
     BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
