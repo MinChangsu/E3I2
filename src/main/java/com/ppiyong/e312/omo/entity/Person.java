@@ -1,5 +1,6 @@
 package com.ppiyong.e312.omo.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -24,6 +25,7 @@ public class Person {
     private String road3_mafia;
     private String road4;
     private String road4_mafia;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "Asia/Seoul")
     @CreationTimestamp
     private LocalDateTime create_at;
 }

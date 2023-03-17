@@ -5,13 +5,17 @@ import com.ppiyong.e312.omo.entity.Streaming;
 import com.ppiyong.e312.omo.service.MafiaChartService;
 import com.ppiyong.e312.omo.service.StreamingService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@Slf4j
 public class OmoController {
     final private StreamingService streamingService;
     final private MafiaChartService mafiaChartService;
@@ -22,6 +26,8 @@ public class OmoController {
     }
 
     @GetMapping(path = "/mafia-chart")
-    public List<Person> MafiaChartList() { return mafiaChartService.MafiaChartList(); }
-
+    public List<Person> MafiaChartList() {
+        return mafiaChartService.MafiaChartList();
+    }
 }
+
