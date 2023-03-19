@@ -23,6 +23,11 @@ public class User {
     @CreationTimestamp
     private Timestamp create_at;
 
+//    추가 컬럼
+    long totalCount;
+    long seq;
+
+
     @Builder
     public User(int id, String name, String username ,String password, String role, String email, Timestamp create_at) {
         this.id = id;
