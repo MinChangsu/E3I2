@@ -15,4 +15,5 @@ public interface MemberRepository extends JpaRepository<User,Integer> {
     List<User> findByRole(Role role);
 
 
+
 }

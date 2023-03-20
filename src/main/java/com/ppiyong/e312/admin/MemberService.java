@@ -4,6 +4,7 @@ package com.ppiyong.e312.admin;
 import com.ppiyong.e312.admin.dto.MemberDto;
 import com.ppiyong.e312.admin.model.MemberParam;
 import com.ppiyong.e312.admin.model.Role;
+import com.ppiyong.e312.member.entity.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
@@ -20,4 +21,7 @@ public interface MemberService extends UserDetailsService {
     MemberDto getUser(int id);
 
     ResponseEntity update(int id, Role memberDto);
+
+    ResponseEntity delete(int id);
+
 }

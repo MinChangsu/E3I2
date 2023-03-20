@@ -89,11 +89,17 @@ public class MemberServiceImpl implements MemberService {
         return ResponseEntity.ok(null);
     }
 
-
-
-
-
+    @Override
+    public ResponseEntity delete(int id) {
+        memberRepository.deleteById(id);
+        return ResponseEntity.ok("멤버 삭제요청 완료");
+    }
 
 
 }
+
+
+
+
+
 
