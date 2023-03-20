@@ -1,5 +1,6 @@
 package com.ppiyong.e312.admin.dto;
 
+import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.member.entity.User;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -19,7 +20,7 @@ public class MemberDto {
         private String name;
         private String userName;
         private String email;
-        private String role;
+        private Role role;
         @CreationTimestamp
         private Timestamp create_at;
 
@@ -34,9 +35,14 @@ public class MemberDto {
             this.name=user.getName();
             this.userName=user.getUsername();
             this.email=user.getEmail();
-            this.role=user.getRole();
+            this.role= Role.valueOf(String.valueOf(user.getRole()));
             this.create_at=user.getCreate_at();
         }
+
+    public void update(Role role) {
+        this.role = role;
+
+    }
 
 
 

@@ -1,5 +1,6 @@
 package com.ppiyong.e312.member.service;
 
+import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.auth.PrincipalDetails;
 import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.model.UserDto;
@@ -30,7 +31,7 @@ public class UserService {
     }
 
 
-    public String getUserRole() {
+    public Role getUserRole() {
         PrincipalDetails principalDetails = (PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         User user = principalDetails.getUser();
         return user.getRole();

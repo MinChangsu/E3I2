@@ -20,7 +20,7 @@ public class UserDto {
         this.name=user.getName();
         this.username=user.getUsername();
         this.email=user.getEmail();
-        this.role=user.getRole();
+        this.role= String.valueOf(user.getRole());
         this.create_at=user.getCreate_at();
     }
 }

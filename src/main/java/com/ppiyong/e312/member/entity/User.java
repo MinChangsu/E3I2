@@ -1,5 +1,6 @@
 package com.ppiyong.e312.member.entity;
 
+import com.ppiyong.e312.admin.model.Role;
 import lombok.Builder;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -19,7 +20,7 @@ public class User {
     private String username;
     private String password;
     private String email;
-    private String role;
+    private Role role;
     @CreationTimestamp
     private Timestamp create_at;
 
@@ -29,7 +30,7 @@ public class User {
 
 
     @Builder
-    public User(int id, String name, String username ,String password, String role, String email, Timestamp create_at) {
+    public User(int id, String name, String username ,String password, Role role, String email, Timestamp create_at) {
         this.id = id;
         this.name = name;
         this.username =username;
@@ -40,6 +41,11 @@ public class User {
     }
 
     public User() {
+
+    }
+
+    public void update(Role role) {
+        this.role = role;
 
     }
 }

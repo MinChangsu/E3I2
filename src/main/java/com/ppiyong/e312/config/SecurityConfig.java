@@ -37,7 +37,7 @@ public class SecurityConfig {
                 .antMatchers("/", "/hello","/hi")
                 .permitAll()
                 .antMatchers("/user")
-                .hasAuthority("USER")
+                .hasAuthority("MEMBER")
                 .anyRequest()
                 .authenticated()
                 .and()

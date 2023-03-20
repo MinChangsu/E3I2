@@ -1,18 +1,23 @@
 package com.ppiyong.e312.admin.controller;
 
 
+import com.nimbusds.jose.proc.SecurityContext;
 import com.ppiyong.e312.admin.MemberService;
 import com.ppiyong.e312.admin.dto.MemberDto;
+import com.ppiyong.e312.admin.model.Role;
+import com.ppiyong.e312.auth.PrincipalDetails;
+import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.model.UserDto;
 import com.ppiyong.e312.member.service.UserService;
 import com.ppiyong.e312.post.model.PostDto;
 import com.ppiyong.e312.post.model.PostResponseDto;
 import com.ppiyong.e312.post.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -59,6 +64,19 @@ public class AdminController {
         return postService.getPostAll(title);
     }
 
+    @PutMapping("/admin/roleupdate")
+    public ResponseEntity RoleUpdate(@RequestBody Role role){
+//        Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
+//        PrincipalDetails principalDetails=(PrincipalDetails) authentication.getPrincipal();
+//        User user=principalDetails.getUser();
+//        int id=user.getId();
+
+        PrincipalDetails principalDetails=(PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        int id=principalDetails.getUser().getId();
+
+
+        return memberService.update(id,role);
+    }
 
 
 

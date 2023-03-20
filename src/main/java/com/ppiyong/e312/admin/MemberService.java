@@ -3,14 +3,11 @@ package com.ppiyong.e312.admin;
 
 import com.ppiyong.e312.admin.dto.MemberDto;
 import com.ppiyong.e312.admin.model.MemberParam;
-import com.ppiyong.e312.member.entity.User;
-import com.ppiyong.e312.member.model.UserDto;
-import com.ppiyong.e312.post.entity.Post;
-import com.ppiyong.e312.post.model.PostResponseDto;
+import com.ppiyong.e312.admin.model.Role;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
 public interface MemberService extends UserDetailsService {
@@ -22,6 +19,5 @@ public interface MemberService extends UserDetailsService {
     @Transactional
     MemberDto getUser(int id);
 
-
-
+    ResponseEntity update(int id, Role memberDto);
 }

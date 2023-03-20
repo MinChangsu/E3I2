@@ -4,13 +4,11 @@ import com.ppiyong.e312.admin.MemberService;
 import com.ppiyong.e312.admin.dto.MemberDto;
 import com.ppiyong.e312.admin.mapper.MemberMapper;
 import com.ppiyong.e312.admin.model.MemberParam;
+import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.admin.repository.MemberRepository;
 import com.ppiyong.e312.member.entity.User;
-import com.ppiyong.e312.post.entity.Post;
-import com.ppiyong.e312.post.model.PostResponseDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
@@ -81,5 +79,21 @@ public class MemberServiceImpl implements MemberService {
                 return null;
             }
         }
+
+    @Override
+    public ResponseEntity update(int id, Role memberDto) {
+        User user=memberRepository.findByRole(memberDto).get(id);
+        user.update(memberDto);
+        memberRepository.save(user);
+
+        return ResponseEntity.ok(null);
     }
+
+
+
+
+
+
+
+}
 
