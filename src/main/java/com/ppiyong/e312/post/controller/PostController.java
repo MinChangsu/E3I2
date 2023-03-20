@@ -42,6 +42,7 @@ public class PostController {
 
         return postService.getPostAll(pageable,title);
     }
+
     @Transactional
     @GetMapping("/postAll")
     public List<PostResponseDto> postAll(
@@ -50,6 +51,7 @@ public class PostController {
 
         return postService.getPostAll(title);
     }
+
     @Transactional
     @GetMapping("/pageReport-postAll")
     public List<PostResponseDto> reportpostAll(

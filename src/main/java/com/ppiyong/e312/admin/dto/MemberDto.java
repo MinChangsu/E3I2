@@ -4,12 +4,18 @@ import com.ppiyong.e312.member.entity.User;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Timestamp;
 
 @Data
 public class MemberDto {
 
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
         private int userId;
+
         private String name;
         private String userName;
         private String email;

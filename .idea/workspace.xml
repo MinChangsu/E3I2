@@ -5,71 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55bf0d2-ee3c-42be-95db-5e34271661cf" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminPostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/dto/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/mapper/MemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/model/MemberParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/service/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/util/PageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/util/PageUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/member/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/PostMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/dto/MemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/E312Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/E312Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/GoogleUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/GoogleUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/KakaoUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/KakaoUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/NaverUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/NaverUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/OAuth2UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/OAuth2UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/OAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/OAuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/PrincipalDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/PrincipalDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/OAuth2AuthenticationFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/OAuth2AuthenticationFailureHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/OAuth2AuthenticationSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/OAuth2AuthenticationSuccessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/PassConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/PassConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/member/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/jwt/JwtRequestFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/model/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/model/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/member/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Streaming.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/Streaming.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/omo/entity/car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post$PostBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post$PostBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/TimeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/entity/TimeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto$CommentRequestDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto$CommentRequestDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentRequestDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/CommentResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostResponseDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/model/PostResponseDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/CommentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/CommentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/MemberMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -139,7 +95,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/kaka/E3I2/src/main/resources/templates",
+    "last_opened_file_path": "C:/kaka/E3I2/src/main/resources/mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -167,7 +123,16 @@
       <recent name="com.ppiyong.e312.admin.model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.E312Application">
+    <configuration name="generated-requests | #52" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="52" requestIdentifier="#52" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #67" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="67" requestIdentifier="#67" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #68" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="68" requestIdentifier="#68" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="E312Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E312" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ppiyong.e312.E312Application" />
@@ -175,6 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP 요청.generated-requests | #68" />
+        <item itemvalue="HTTP 요청.generated-requests | #67" />
+        <item itemvalue="HTTP 요청.generated-requests | #52" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -186,6 +158,7 @@
       <updated>1679014858690</updated>
       <workItem from="1679014859859" duration="9051000" />
       <workItem from="1679201919846" duration="19147000" />
+      <workItem from="1679272088917" duration="4258000" />
     </task>
     <servers />
   </component>

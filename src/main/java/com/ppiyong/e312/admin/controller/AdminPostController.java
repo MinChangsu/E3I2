@@ -24,24 +24,24 @@ public class AdminPostController {
     private final MemberService memberService;
 
     @GetMapping("/admin/Post/list.do")
-    public String postlist(Model model, MemberParam parameter){
+    public String memberList(Model model, MemberParam parameter){
 
         parameter.init();
 
        List<MemberDto> members = memberService.list(parameter);
+
+        long totalCount = 0;
+        if (members != null && members.size() > 0) {
+            totalCount = members.get(0).getTotalCount();
+        }
+
+        String queryString = "";
+
+        PageUtil pageUtil = new PageUtil(totalCount, parameter.getPageSize(), parameter.getPageIndex(), queryString);
+
         model.addAttribute("list", members);
-//        long totalCount = 0;
-//        if (users != null && users.size() > 0) {
-//            totalCount = users.get(0).getTotalCount();
-//        }
-//
-//        String queryString = "";
-//
-//        PageUtil pageUtil = new PageUtil(totalCount, parameter.getPageSize(), parameter.getPageIndex(), queryString);
-//
-//        model.addAttribute("list", users);
-//        model.addAttribute("totalCount", totalCount);
-//        model.addAttribute("pager", pageUtil.pager());
+        model.addAttribute("totalCount", totalCount);
+        model.addAttribute("pager", pageUtil.pager());
 
         return "admin/member/list";
 
