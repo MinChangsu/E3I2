@@ -19,7 +19,6 @@ public interface MemberService extends UserDetailsService {
 
     List<MemberDto> memberList();
 
-
     @Transactional
     MemberDto getUser(int id);
 

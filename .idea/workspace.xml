@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55bf0d2-ee3c-42be-95db-5e34271661cf" name="변경" comment="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음" />
+    <list default="true" id="e55bf0d2-ee3c-42be-95db-5e34271661cf" name="변경" comment="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/controller/AdminMemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/model/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/model/PostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/post/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/admin/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/admin/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/admin/controller/AdminPostController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/admin/entity/Member$MemberBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/admin/entity/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/post/repository/PostRepository.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,6 +127,12 @@
     <configuration name="generated-requests | #68" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="68" requestIdentifier="#68" runType="단일 요청 실행">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #69" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="69" requestIdentifier="#69" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #70" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="70" requestIdentifier="#70" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="E312Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E312" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ppiyong.e312.E312Application" />
@@ -121,6 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 요청.generated-requests | #69" />
+        <item itemvalue="HTTP 요청.generated-requests | #70" />
         <item itemvalue="HTTP 요청.generated-requests | #68" />
         <item itemvalue="HTTP 요청.generated-requests | #67" />
         <item itemvalue="HTTP 요청.generated-requests | #52" />
@@ -137,7 +160,7 @@
       <updated>1679014858690</updated>
       <workItem from="1679014859859" duration="9051000" />
       <workItem from="1679201919846" duration="19147000" />
-      <workItem from="1679272088917" duration="4640000" />
+      <workItem from="1679272088917" duration="7067000" />
     </task>
     <task id="LOCAL-00001" summary="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
       <created>1679276885252</created>
@@ -146,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679276885252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
+      <created>1679277171248</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679277171248</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +184,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음" />
+    <MESSAGE value="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음" />
   </component>
 </project>

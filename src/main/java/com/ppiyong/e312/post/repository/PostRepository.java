@@ -13,6 +13,6 @@ public interface PostRepository extends JpaRepository<Post,Integer> {
 Page<Post> findAllByTitleContainingAndCategory(Pageable pageable,String title,String category);
 List<Post> findAllByTitleContainingAndCategory(String title, String categoey);
 
-
+List<Post> findAll();
 
 }
