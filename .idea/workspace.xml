@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] react 와 로그인 기능 맞추기">
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 배포 준비로 인함 mvn wrapper 설치">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/OAuth2AuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/OAuth2AuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
       <workItem from="1678433688430" duration="2143000" />
       <workItem from="1678435896780" duration="29202000" />
       <workItem from="1678846039838" duration="305000" />
-      <workItem from="1679316344003" duration="18776000" />
+      <workItem from="1679316344003" duration="19106000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -181,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679457263888</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[feat] 배포 준비로 인함 mvn wrapper 설치">
+      <created>1679462914600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679462914600</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +214,7 @@
     <MESSAGE value="[feat] PostController 페이징기능없는 get함수 추가" />
     <MESSAGE value="[feat] PostList 내림차순정렬" />
     <MESSAGE value="[feat] react 와 로그인 기능 맞추기" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] react 와 로그인 기능 맞추기" />
+    <MESSAGE value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
   </component>
 </project>
