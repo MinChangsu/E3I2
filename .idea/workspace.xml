@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 마리아 db로변경">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/KaKaoLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/auth/KaKaoLogin.class" afterDir="false" />
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 카카오 주소변경">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1678433688430" duration="2143000" />
       <workItem from="1678435896780" duration="29202000" />
       <workItem from="1678846039838" duration="305000" />
-      <workItem from="1679316344003" duration="20238000" />
+      <workItem from="1679316344003" duration="22125000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -206,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679464825837</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[feat] 카카오 주소변경">
+      <created>1679464885692</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679464885692</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[feat] 카카오 주소변경">
+      <created>1679465104131</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465104131</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +250,7 @@
     <MESSAGE value="[feat] react 와 로그인 기능 맞추기" />
     <MESSAGE value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
     <MESSAGE value="[feat] 마리아 db로변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 마리아 db로변경" />
+    <MESSAGE value="[feat] 카카오 주소변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 카카오 주소변경" />
   </component>
 </project>
