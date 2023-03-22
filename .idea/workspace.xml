@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 배포 준비로 인함 mvn wrapper 설치">
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 마리아 db로변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/KaKaoLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/KaKaoLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <workItem from="1678433688430" duration="2143000" />
       <workItem from="1678435896780" duration="29202000" />
       <workItem from="1678846039838" duration="305000" />
-      <workItem from="1679316344003" duration="19106000" />
+      <workItem from="1679316344003" duration="20170000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -186,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679462914600</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[feat] 마리아 db로변경">
+      <created>1679463251038</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679463251038</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[feat] 마리아 db로변경">
+      <created>1679463504760</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679463504760</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +228,7 @@
     <MESSAGE value="[feat] PostList 내림차순정렬" />
     <MESSAGE value="[feat] react 와 로그인 기능 맞추기" />
     <MESSAGE value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
+    <MESSAGE value="[feat] 마리아 db로변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 마리아 db로변경" />
   </component>
 </project>
