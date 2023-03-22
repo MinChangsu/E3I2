@@ -27,6 +27,7 @@ public class OAuth2AuthenticationSuccessHandler implements AuthenticationSuccess
         response.setHeader(JwtProperties.HEADER_STRING, JwtProperties.TOKEN_PREFIX + jwtToken);
         Cookie cookie =new Cookie(JwtProperties.HEADER_STRING,jwtToken);
         response.addCookie(cookie);
+
         String uri=makeRedirectUrl(jwtToken);
         System.out.println("uri = " + uri);
 //      response.sendRedirect("http://192.168.31.158:3000/login");
