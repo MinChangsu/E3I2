@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 카카오 주소변경">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 인덱스변경" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +96,7 @@
       <workItem from="1678433688430" duration="2143000" />
       <workItem from="1678435896780" duration="29202000" />
       <workItem from="1678846039838" duration="305000" />
-      <workItem from="1679316344003" duration="22125000" />
+      <workItem from="1679316344003" duration="22547000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -220,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679465104131</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[feat] 인덱스변경">
+      <created>1679482174606</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482174606</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +255,7 @@
     <MESSAGE value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
     <MESSAGE value="[feat] 마리아 db로변경" />
     <MESSAGE value="[feat] 카카오 주소변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 카카오 주소변경" />
+    <MESSAGE value="[feat] 인덱스변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 인덱스변경" />
   </component>
 </project>
