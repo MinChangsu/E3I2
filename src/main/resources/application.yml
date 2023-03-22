@@ -9,8 +9,8 @@ server:
 
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/e3122?serverTimezone=Asia/Seoul
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://svc.sel3.cloudtype.app:31121/e3i2
     username: root
     password: 1234
   security:
@@ -27,7 +27,7 @@ spring:
           # 네이버는 spring security가 기본적을 제공해주지 않기 때문에 github, google과 달리 많은 정보를 적어줘야한다.
           kakao:
             client-id: 781439d4c65490bbf7fa59a3bee09329
-            redirect-uri: http://localhost:8080/login/oauth2/code/kakao
+            redirect-uri: http://192.168.31.151:8080/login/oauth2/code/kakao
             authorization_grant_type: authorization_code
             scope: profile_nickname,account_email,profile_image
             client-name: Kakao

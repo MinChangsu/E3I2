@@ -22,6 +22,7 @@ public class PostController {
 
     @PostMapping("/post")
     public PostResponseDto createPost(@RequestBody Post post){
+        System.out.println("post = " + post);
 
         return postService.createPost(post);
     }
