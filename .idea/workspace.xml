@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 인덱스변경">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="[feat] 워크스페이스" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +98,7 @@
       <workItem from="1678952052907" duration="9834000" />
       <workItem from="1679122839486" duration="641000" />
       <workItem from="1679240349552" duration="29000" />
+      <workItem from="1679489558939" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679014362604</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[feat] 워크스페이스">
+      <created>1679489575281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679489575281</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +196,7 @@
     <MESSAGE value="[feat]cctv브랜치 시범운영" />
     <MESSAGE value="[feat] user 권한반환 함수 추가" />
     <MESSAGE value="[feat] 워크페이스" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 워크페이스" />
+    <MESSAGE value="[feat] 워크스페이스" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 워크스페이스" />
   </component>
 </project>
