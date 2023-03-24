@@ -12,7 +12,7 @@ public class UserDto {
     private String username;
     private String email;
     private String role;
-    @CreationTimestamp
+
     private Timestamp create_at;
 
     public UserDto(User user) {

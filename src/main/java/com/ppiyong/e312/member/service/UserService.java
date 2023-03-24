@@ -35,11 +35,12 @@ public class UserService {
 
 
 
-    public User getUser() {
-ㄴ
+    public UserDto getUser() {
+
         PrincipalDetails principalDetails = (PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         User user = principalDetails.getUser();
-        return user;
+
+        return new UserDto(user);
 
     }
 

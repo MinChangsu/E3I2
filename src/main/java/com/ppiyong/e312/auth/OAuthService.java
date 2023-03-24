@@ -93,7 +93,7 @@ public class OAuthService extends DefaultOAuth2UserService {
                     .username(username)
                     .email(email)
                     .password(password)
-                    .role("USER")
+                    .role(Role.valueOf("MEMBER"))
                     .name(nickname)
                     .build();
 

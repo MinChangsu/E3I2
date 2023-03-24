@@ -28,8 +28,8 @@ private final UserService userService;
     }
 
 
-    @GetMapping("/userRole")
-    public Role userRole(){
+    @GetMapping("/getuser")
+    public UserDto userRole(){
 
         return userService.getUser();
     }
