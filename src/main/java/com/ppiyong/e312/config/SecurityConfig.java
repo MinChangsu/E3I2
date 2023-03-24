@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/", "/hello","/hi")
+                .antMatchers("/", "/hello","/*")
                 .permitAll()
                 .antMatchers("/user")
                 .hasAuthority("MEMBER")
@@ -44,7 +44,9 @@ public class SecurityConfig {
                 .addFilter(new JwtRequestFilter(authenticationManager, userRepository))
                 .addFilter(corsConfig.corsFilter())
                 .oauth2Login() // OAuth2 로그인 설정 시작점
-                .loginPage("http://localhost:8080")
+                .loginPage("https://web-piyong-front-luj2cldtwtwnh.sel3.cloudtype.app")
+//              .loginPage("http://localhost:3000")
+
                 .userInfoEndpoint() // OAuth2 로그인 성공 이후 사용자 정보를 가져올 때 설정 담당
                 .userService(oAuthService)
                 .and()

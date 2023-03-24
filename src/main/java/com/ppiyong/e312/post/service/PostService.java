@@ -68,7 +68,7 @@ public class PostService {
     public List<PostResponseDto> getPostAll(String title) {
 
 
-        List<Post> list = postRepository.findAllByTitleContainingAndCategory(title,"자유게시판");
+        List<Post> list = postRepository.findAllByTitleContainingAndCategoryOrderByIdDesc(title,"자유게시판");
         List<PostResponseDto> list_ = new ArrayList<>();
 
         for (Post p : list) {
@@ -88,7 +88,7 @@ public class PostService {
         return list_;
     }
     public List<PostResponseDto> getReportPostAll(String title) {
-        List<Post> list = postRepository.findAllByTitleContainingAndCategory( title,"신고게시판");
+        List<Post> list = postRepository.findAllByTitleContainingAndCategoryOrderByIdDesc( title,"신고게시판");
         List<PostResponseDto> list_ = new ArrayList<>();
 
         for (Post p : list) {
