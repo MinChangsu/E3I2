@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature" />
+        <entry key="$PROJECT_DIR$" value="feature_changsu_omo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,31 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "18ac391895f730324f7fb7cd9eee378e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/changsu/Desktop/E3I2_git&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;18ac391895f730324f7fb7cd9eee378e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mariadb"
+
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/controller" />
@@ -110,7 +106,10 @@
       <workItem from="1678433688430" duration="2143000" />
       <workItem from="1678435896780" duration="29202000" />
       <workItem from="1678846039838" duration="305000" />
-      <workItem from="1679316344003" duration="22547000" />
+      <workItem from="1678952052907" duration="9834000" />
+      <workItem from="1679122839486" duration="641000" />
+      <workItem from="1679240349552" duration="29000" />
+      <workItem from="1679489558939" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary="초기마스터파일">
       <created>1678435694245</created>
@@ -168,77 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678860169568</updated>
     </task>
-    <task id="LOCAL-00009" summary="[feat] PostController 페이징기능없는 get함수 추가">
-      <created>1678950225003</created>
+    <task id="LOCAL-00009" summary="[feat] 워크페이스">
+      <created>1679014362604</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1678950225003</updated>
+      <updated>1679014362604</updated>
     </task>
-    <task id="LOCAL-00010" summary="[feat] PostList 내림차순정렬">
-      <created>1679283567609</created>
+    <task id="LOCAL-00010" summary="[feat] 워크스페이스">
+      <created>1679489575281</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1679283567609</updated>
+      <updated>1679489575281</updated>
     </task>
-    <task id="LOCAL-00011" summary="[feat] react 와 로그인 기능 맞추기">
-      <created>1679457263888</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679457263888</updated>
-    </task>
-    <task id="LOCAL-00012" summary="[feat] 배포 준비로 인함 mvn wrapper 설치">
-      <created>1679462914600</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679462914600</updated>
-    </task>
-    <task id="LOCAL-00013" summary="[feat] 마리아 db로변경">
-      <created>1679463251038</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1679463251038</updated>
-    </task>
-    <task id="LOCAL-00014" summary="[feat] 마리아 db로변경">
-      <created>1679463504760</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1679463504760</updated>
-    </task>
-    <task id="LOCAL-00015" summary="[feat] 마리아 db로변경">
-      <created>1679464825837</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1679464825837</updated>
-    </task>
-    <task id="LOCAL-00016" summary="[feat] 카카오 주소변경">
-      <created>1679464885692</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1679464885692</updated>
-    </task>
-    <task id="LOCAL-00017" summary="[feat] 카카오 주소변경">
-      <created>1679465104131</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1679465104131</updated>
-    </task>
-    <task id="LOCAL-00018" summary="[feat] 인덱스변경">
-      <created>1679482174606</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1679482174606</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,13 +206,8 @@
     <MESSAGE value="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가" />
     <MESSAGE value="[feat]cctv브랜치 시범운영" />
     <MESSAGE value="[feat] user 권한반환 함수 추가" />
-    <MESSAGE value="[feat] PostController 페이징기능없는 get함수 추가" />
-    <MESSAGE value="[feat] PostList 내림차순정렬" />
-    <MESSAGE value="[feat] react 와 로그인 기능 맞추기" />
-    <MESSAGE value="[feat] 배포 준비로 인함 mvn wrapper 설치" />
-    <MESSAGE value="[feat] 마리아 db로변경" />
-    <MESSAGE value="[feat] 카카오 주소변경" />
-    <MESSAGE value="[feat] 인덱스변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 인덱스변경" />
+    <MESSAGE value="[feat] 워크페이스" />
+    <MESSAGE value="[feat] 워크스페이스" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 워크스페이스" />
   </component>
 </project>
