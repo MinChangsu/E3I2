@@ -60,7 +60,7 @@ public class AdminController {
         return postService.getPostAll(title);
     }
 
-    @PutMapping("/admin/roleupdate")
+    @PutMapping("/admin/roleUpdate")
     public ResponseEntity RoleUpdate(@RequestBody Role role){
 //        Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
 //        PrincipalDetails principalDetails=(PrincipalDetails) authentication.getPrincipal();
@@ -73,7 +73,7 @@ public class AdminController {
         return memberService.update(id, role);
     }
 
-    @DeleteMapping("/admin/post")
+    @DeleteMapping("/admin/memberDelete")
     public ResponseEntity memberDelete(){
         PrincipalDetails principalDetails=(PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         int id=principalDetails.getUser().getId();
