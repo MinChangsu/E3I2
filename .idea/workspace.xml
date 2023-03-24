@@ -4,111 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="9579c5ae-5e61-42d9-8d22-af7f269c38cf" name="변경" comment="[fix] 유저 정보 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/admin/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/OAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/OAuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="AnnotationType" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="feature" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="0772915e-38b4-4ca3-89bb-8674c6a47187" />
-        <option name="url" value="https://github.com/MinChangsu/E3I2.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="JpbToolWindowState">
-    <option name="isToolWindowVisible" value="false" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2N7UxHYdPGHuTGXeaE45U8S3mim" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;18ac391895f730324f7fb7cd9eee378e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-
-    ]
-  }
-}</component>
-  <component name="RecentsManager">
-
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ppiyong.e312.admin.model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.E312Application">
-    <configuration name="generated-requests | #67" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="67" requestIdentifier="#67" runType="단일 요청 실행">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #68" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="68" requestIdentifier="#68" runType="단일 요청 실행">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #69" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="69" requestIdentifier="#69" runType="단일 요청 실행">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #70" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="70" requestIdentifier="#70" runType="단일 요청 실행">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #71" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="71" requestIdentifier="#71" runType="단일 요청 실행">
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager">
     <configuration name="E312Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E312" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ppiyong.e312.E312Application" />
@@ -116,67 +30,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP 요청.generated-requests | #71" />
-        <item itemvalue="HTTP 요청.generated-requests | #69" />
-        <item itemvalue="HTTP 요청.generated-requests | #70" />
-        <item itemvalue="HTTP 요청.generated-requests | #68" />
-        <item itemvalue="HTTP 요청.generated-requests | #67" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="e55bf0d2-ee3c-42be-95db-5e34271661cf" name="변경" comment="" />
-      <created>1679014858690</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-
-    </task>
-    <task id="LOCAL-00001" summary="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
-      <created>1679276885252</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679276885252</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
-      <created>1679277171248</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679277171248</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[feat] 게시판 조회기능 구현 &#10;&#10;게시판 조회기능 추가">
-      <created>1679279510389</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679279510389</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[feat] 회원 등급과 등급 변경 구현&#10;&#10;회원등급 추가 (ADMIN, MEMBER, POLICE)&#10;기본 User등급 -&gt; MEMBER 로 변경 &#10;등급 변경 API 개발&#10;&#10;Resolves: 등급 변경으로인한 오류 해결&#10;User의 Role(등급)을 enum을 사용하여 추가 정리하였고 이로인해 &#10;Role의 원시값 처리하는 방식을 바꿔줌">
-      <created>1679290703480</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679290703480</updated>
-    </task>
-    <task id="LOCAL-00005" summary="[feat] 회원 삭제 구현&#10;&#10;회원 삭제 API 개발">
-      <created>1679296364410</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679296364410</updated>
-    </task>
-
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="VcsManagerConfiguration">
-
+    <MESSAGE value="[fix] 유저 정보 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] 유저 정보 수정" />
   </component>
 </project>
