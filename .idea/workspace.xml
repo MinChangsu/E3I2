@@ -4,6 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="90243102-6fcc-486e-a004-eda23eb5f9cd" name="변경" comment="[feat] 워크스페이스">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,11 +70,20 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql"
+      "mysql",
+      "mariadb"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/repostitory" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/entity" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ppiyong.e312.post.service" />
       <recent name="com.ppiyong.e312.post.controller" />
