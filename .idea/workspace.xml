@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90243102-6fcc-486e-a004-eda23eb5f9cd" name="변경" comment="[feat] 워크스페이스">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ppiyong/e312/config/SecurityConfig.class" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -25,10 +23,26 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature_changsu_omo" />
+        <entry key="$PROJECT_DIR$" value="feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0772915e-38b4-4ca3-89bb-8674c6a47187" />
+        <option name="url" value="https://github.com/MinChangsu/E3I2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,7 +59,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2MoUywZmuDcjlsT3fsBHixGRl0n" />
+  <component name="ProjectId" id="2N7UxHYdPGHuTGXeaE45U8S3mim" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,8 +72,9 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/changsu/Desktop/E3I2_git&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,21 +87,28 @@
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/repostitory" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/entity" />
+
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ppiyong.e312.post.service" />
-      <recent name="com.ppiyong.e312.post.controller" />
-      <recent name="com.ppiyong.e312.post.entity" />
+      <recent name="com.ppiyong.e312.admin.model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.E312Application">
+    <configuration name="generated-requests | #67" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="67" requestIdentifier="#67" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #68" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="68" requestIdentifier="#68" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #69" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="69" requestIdentifier="#69" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #70" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="70" requestIdentifier="#70" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #71" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="71" requestIdentifier="#71" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="E312Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="E312" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ppiyong.e312.E312Application" />
@@ -94,120 +116,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP 요청.generated-requests | #71" />
+        <item itemvalue="HTTP 요청.generated-requests | #69" />
+        <item itemvalue="HTTP 요청.generated-requests | #70" />
+        <item itemvalue="HTTP 요청.generated-requests | #68" />
+        <item itemvalue="HTTP 요청.generated-requests | #67" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="e0bd1cee-4f8a-4903-af4d-ae71d8ba8842" name="변경" comment="" />
-      <created>1678433687245</created>
+      <changelist id="e55bf0d2-ee3c-42be-95db-5e34271661cf" name="변경" comment="" />
+      <created>1679014858690</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678433687245</updated>
-      <workItem from="1678433688430" duration="2143000" />
-      <workItem from="1678435896780" duration="29202000" />
-      <workItem from="1678846039838" duration="305000" />
-      <workItem from="1678952052907" duration="9834000" />
-      <workItem from="1679122839486" duration="641000" />
-      <workItem from="1679240349552" duration="29000" />
-      <workItem from="1679489558939" duration="865000" />
+
     </task>
-    <task id="LOCAL-00001" summary="초기마스터파일">
-      <created>1678435694245</created>
+    <task id="LOCAL-00001" summary="[feat] 멤버 조회기능 구현&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves: 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
+      <created>1679276885252</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1678435694245</updated>
+      <updated>1679276885252</updated>
     </task>
-    <task id="LOCAL-00002" summary="[feat]조회수 구현&#10;&#10;PostService 의 getPost 메소드에 조회수 기능 추가">
-      <created>1678437013102</created>
+    <task id="LOCAL-00002" summary="[feat] 멤버 조회기능 구현 (커밋안된 파일들 추가 푸쉬)&#10;&#10;Mapper를 통하여 유저정보 가져오는 api 추가&#10;&#10;&#10;Resolves:  SQLException 오류해결 &#10;이전오류는 다른작업으로 인해 MariaDB가 실행중인 상태였고 &#10;MySQL이 실행되지 못하여 일어나는 오류였음">
+      <created>1679277171248</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1678437013102</updated>
+      <updated>1679277171248</updated>
     </task>
-    <task id="LOCAL-00003" summary="[feat]댓글작성 구현&#10;Comment entity 생성&#10;CommentService 의 createComment 메소드에 댓글생성 기능 추가">
-      <created>1678784787641</created>
+    <task id="LOCAL-00003" summary="[feat] 게시판 조회기능 구현 &#10;&#10;게시판 조회기능 추가">
+      <created>1679279510389</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1678784787641</updated>
+      <updated>1679279510389</updated>
     </task>
-    <task id="LOCAL-00004" summary="[feat]post crud 구현&#10;PostService 의 delete,update 메소드 추가">
-      <created>1678791903397</created>
+    <task id="LOCAL-00004" summary="[feat] 회원 등급과 등급 변경 구현&#10;&#10;회원등급 추가 (ADMIN, MEMBER, POLICE)&#10;기본 User등급 -&gt; MEMBER 로 변경 &#10;등급 변경 API 개발&#10;&#10;Resolves: 등급 변경으로인한 오류 해결&#10;User의 Role(등급)을 enum을 사용하여 추가 정리하였고 이로인해 &#10;Role의 원시값 처리하는 방식을 바꿔줌">
+      <created>1679290703480</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1678791903397</updated>
+      <updated>1679290703480</updated>
     </task>
-    <task id="LOCAL-00005" summary="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가">
-      <created>1678843560419</created>
+    <task id="LOCAL-00005" summary="[feat] 회원 삭제 구현&#10;&#10;회원 삭제 API 개발">
+      <created>1679296364410</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1678843560419</updated>
+      <updated>1679296364410</updated>
     </task>
-    <task id="LOCAL-00006" summary="[feat]cctv브랜치 시범운영">
-      <created>1678846675602</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1678846675602</updated>
-    </task>
-    <task id="LOCAL-00007" summary="[feat]cctv브랜치 시범운영">
-      <created>1678847077603</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1678847077603</updated>
-    </task>
-    <task id="LOCAL-00008" summary="[feat] user 권한반환 함수 추가">
-      <created>1678860169568</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678860169568</updated>
-    </task>
-    <task id="LOCAL-00009" summary="[feat] 워크페이스">
-      <created>1679014362604</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679014362604</updated>
-    </task>
-    <task id="LOCAL-00010" summary="[feat] 워크스페이스">
-      <created>1679489575281</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679489575281</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="초기마스터파일" />
-    <MESSAGE value="[feat]조회수 구현&#10;&#10;PostService 의 getPost 메소드에 조회수 기능 추가" />
-    <MESSAGE value="[feat]댓글작성 구현&#10;Comment entity 생성&#10;CommentService 의 createComment 메소드에 댓글생성 기능 추가" />
-    <MESSAGE value="[feat]post crud 구현&#10;PostService 의 delete,update 메소드 추가" />
-    <MESSAGE value="[feat]신고게시판과 자유게시판 구별&#10;PostService 의 getpostAll 메소드 수정&#10;PostService 의 getReportpostAll 메소드 추가" />
-    <MESSAGE value="[feat]cctv브랜치 시범운영" />
-    <MESSAGE value="[feat] user 권한반환 함수 추가" />
-    <MESSAGE value="[feat] 워크페이스" />
-    <MESSAGE value="[feat] 워크스페이스" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 워크스페이스" />
+
   </component>
 </project>

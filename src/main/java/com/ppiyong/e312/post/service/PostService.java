@@ -27,14 +27,12 @@ public class PostService {
 
     public PostResponseDto createPost(Post post) {
 
-
         PrincipalDetails principalDetails = (PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         User user = principalDetails.getUser();
         System.out.println("user = " + user);
         post.setUser(user);
         postRepository.save(post);
         PostResponseDto postdto=new PostResponseDto(post);
-
 
         return postdto;
     }

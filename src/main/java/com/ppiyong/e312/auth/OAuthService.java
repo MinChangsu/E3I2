@@ -1,5 +1,6 @@
 package com.ppiyong.e312.auth;
 
+import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -58,7 +59,7 @@ public class OAuthService extends DefaultOAuth2UserService {
                     .username(username)
                     .email(email)
                     .password(password)
-                    .role("USER")
+                    .role(Role.valueOf("MEMBER"))
                     .name(nickname)
                     .build();
 

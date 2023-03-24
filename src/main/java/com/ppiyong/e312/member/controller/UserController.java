@@ -1,5 +1,7 @@
 package com.ppiyong.e312.member.controller;
 
+
+import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.model.UserDto;
 import com.ppiyong.e312.member.service.UserService;
@@ -19,13 +21,15 @@ private final UserService userService;
 
           int id_=Integer.parseInt(id);
 
-         UserDto user=userService.getUser(id_);
+         UserDto user = userService.getUser(id_);
 
         return user;
 
     }
-    @GetMapping("/getuser")
-    public User userRole(){
+
+
+    @GetMapping("/userRole")
+    public Role userRole(){
 
         return userService.getUser();
     }
