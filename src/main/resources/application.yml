@@ -10,7 +10,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://svc.sel3.cloudtype.app:31121/e3i2
+    url: jdbc:mariadb://svc.sel3.cloudtype.app:31121/e3i2?serverTimezone=Asia/Seoul
     username: root
     password: 1234
   security:
