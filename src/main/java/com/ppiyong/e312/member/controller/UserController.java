@@ -1,5 +1,8 @@
 package com.ppiyong.e312.member.controller;
 
+
+import com.ppiyong.e312.admin.model.Role;
+import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.model.UserDto;
 import com.ppiyong.e312.member.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -18,9 +21,17 @@ private final UserService userService;
 
           int id_=Integer.parseInt(id);
 
+         UserDto user = userService.getUser(id_);
 
-        return userService.getUser(id_);
+        return user;
 
+    }
+
+
+    @GetMapping("/getuser")
+    public UserDto userRole(){
+
+        return userService.getUser();
     }
     @GetMapping("/user1")
     public String userController() {

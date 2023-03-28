@@ -1,0 +1,19 @@
+Index: src/main/java/com/ppiyong/e312/config/SecurityConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.ppiyong.e312.config;\n\nimport com.ppiyong.e312.jwt.JwtRequestFilter;\nimport com.ppiyong.e312.member.repository.UserRepository;\nimport com.ppiyong.e312.auth.OAuthService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.security.authentication.AuthenticationManager;\nimport org.springframework.security.config.annotation.web.builders.HttpSecurity;\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\nimport org.springframework.security.config.http.SessionCreationPolicy;\nimport org.springframework.security.web.SecurityFilterChain;\n\n@EnableWebSecurity\npublic class SecurityConfig {\n    @Autowired\n    private OAuthService oAuthService;\n    @Autowired\n    private CorsConfig corsConfig;\n    @Autowired\n    private OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;\n    @Autowired\n    private UserRepository userRepository;\n\n\n    @Bean\n    SecurityFilterChain filterChain(HttpSecurity http, AuthenticationManager authenticationManager) throws Exception {\n\n        http\n\n\n                .authorizeRequests()\n\n                .antMatchers(\"/\", \"/hello\",\"/*\")\n                .permitAll()\n\n                .anyRequest()\n                .authenticated()\n                .and()\n                .addFilter(new JwtRequestFilter(authenticationManager, userRepository))\n                .addFilter(corsConfig.corsFilter())\n                .csrf().disable()\n                .httpBasic().disable()\n                .formLogin().disable()\n                .sessionManagement()\n                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)\n                .and()\n                .oauth2Login() // OAuth2 로그인 설정 시작점\n                .loginPage(\"http://localhost:3000\")\n                .userInfoEndpoint() // OAuth2 로그인 성공 이후 사용자 정보를 가져올 때 설정 담당\n                .userService(oAuthService)\n                .and()\n                .successHandler(oAuth2AuthenticationSuccessHandler); // JWT authentication token을 만들고, client가 정의한 redirect로 token을 갖고 넘어감\n\n\n        // OAuth2 로그인 성공 시, 후작업을 진행할 UserService 인터페이스 구현체 등록\n        return http.build();\n    }\n\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/ppiyong/e312/config/SecurityConfig.java b/src/main/java/com/ppiyong/e312/config/SecurityConfig.java
+--- a/src/main/java/com/ppiyong/e312/config/SecurityConfig.java	(revision 876769994a8f03ef3a1ba0472221e80a218c9d1b)
++++ b/src/main/java/com/ppiyong/e312/config/SecurityConfig.java	(date 1678845136332)
+@@ -33,7 +33,7 @@
+ 
+                 .antMatchers("/", "/hello","/*")
+                 .permitAll()
+-
++                
+                 .anyRequest()
+                 .authenticated()
+                 .and()
