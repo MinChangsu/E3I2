@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5f9efc3-c56e-4a64-98ef-6f1a298b1651" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d5f9efc3-c56e-4a64-98ef-6f1a298b1651" name="변경" comment="[fix]mafia 데이터추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/controller/OmoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/controller/OmoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service/MafiaChartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service/MafiaChartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service/StreamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/omo/service/StreamingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/KaKaoLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/auth/KaKaoLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +76,23 @@
       <option name="presentableId" value="Default" />
       <updated>1679989212949</updated>
       <workItem from="1679989214037" duration="2006000" />
-      <workItem from="1680066804694" duration="2667000" />
+      <workItem from="1680066804694" duration="3395000" />
     </task>
+    <task id="LOCAL-00001" summary="[fix]mafia 데이터추가">
+      <created>1680070692316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680070692316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[fix]mafia 데이터추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]mafia 데이터추가" />
   </component>
 </project>
