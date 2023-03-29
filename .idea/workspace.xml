@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d5f9efc3-c56e-4a64-98ef-6f1a298b1651" name="변경" comment="[fix]프론트 주소변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679989212949</updated>
       <workItem from="1679989214037" duration="2006000" />
-      <workItem from="1680066804694" duration="4549000" />
+      <workItem from="1680066804694" duration="6117000" />
     </task>
     <task id="LOCAL-00001" summary="[fix]mafia 데이터추가">
       <created>1680070692316</created>
@@ -92,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680071463619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[fix]프론트 주소변경">
+      <created>1680072585404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680072585404</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

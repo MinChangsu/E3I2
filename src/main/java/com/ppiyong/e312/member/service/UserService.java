@@ -45,6 +45,31 @@ public class UserService {
     }
 
 
+    public UserDto role(int id, int role) {
+        User user=null;
+        Role r=null;
+        Optional<User> userbox=userRepository.findById(id);
+        if(userbox.isPresent()){
+            user=userbox.get();
+            if (role==0){
+                r=Role.ADMIN;
+            } else if (role==1) {
+                r=Role.USER;
 
+            }
+            else {r=Role.POLICE;}
+        }
+        user.setRole(r);
+        user=userRepository.save(user);
+        return new UserDto(user);
+    }
 
+    public void deleteUser(int id) {
+        Optional<User> userbox=userRepository.findById(id);
+        User user=null;
+        if(userbox.isPresent()){
+            user=userbox.get();
+        }
+        userRepository.delete(user);
+    }
 }
