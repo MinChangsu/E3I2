@@ -6,9 +6,10 @@ import com.ppiyong.e312.member.entity.User;
 import com.ppiyong.e312.member.model.UserDto;
 import com.ppiyong.e312.member.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -16,15 +17,16 @@ public class UserController {
 private final UserService userService;
 
 
-    @GetMapping("/user")
-    public UserDto userController(@RequestParam String id) {
+    @PutMapping("/user")
+    public UserDto userController(@RequestParam int id,@RequestParam int role) {
 
-          int id_=Integer.parseInt(id);
-
-         UserDto user = userService.getUser(id_);
-
+         UserDto user = userService.role(id,role);
         return user;
-
+    }
+    @DeleteMapping("/user")
+    public ResponseEntity deleteuser(@RequestParam int id){
+        userService.deleteUser(id);
+        return ResponseEntity.ok("유저 삭제");
     }
 
 
@@ -33,16 +35,16 @@ private final UserService userService;
 
         return userService.getUser();
     }
-    @GetMapping("/user1")
-    public String userController() {
 
-
-        return "user";
-    }
     @GetMapping("/hello")
     public String hello(){
 
         return "hello";
+    }
+    @GetMapping("/userlist")
+    public List<UserDto> userlist(){
+
+        return userService.getList();
     }
 
 
