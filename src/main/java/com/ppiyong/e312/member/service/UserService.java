@@ -13,6 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -71,5 +73,14 @@ public class UserService {
             user=userbox.get();
         }
         userRepository.delete(user);
+    }
+
+    public List<UserDto> getList() {
+        List<User> userlist=userRepository.findAll();
+        List<UserDto> userList=new ArrayList<>();
+        for(User u:userlist){
+            userList.add(new UserDto(u));
+        }
+        return userList;
     }
 }

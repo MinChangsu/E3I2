@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5f9efc3-c56e-4a64-98ef-6f1a298b1651" name="변경" comment="[fix]프론트 주소변경">
+    <list default="true" id="d5f9efc3-c56e-4a64-98ef-6f1a298b1651" name="변경" comment="[fix]유저 수정 삭제 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ppiyong/e312/member/service/UserService.java" afterDir="false" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679989212949</updated>
       <workItem from="1679989214037" duration="2006000" />
-      <workItem from="1680066804694" duration="6117000" />
+      <workItem from="1680066804694" duration="6414000" />
     </task>
     <task id="LOCAL-00001" summary="[fix]mafia 데이터추가">
       <created>1680070692316</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680072585404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[fix]유저 수정 삭제 추가">
+      <created>1680074247699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680074247699</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[fix]mafia 데이터추가" />
     <MESSAGE value="[fix]프론트 주소변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix]프론트 주소변경" />
+    <MESSAGE value="[fix]유저 수정 삭제 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]유저 수정 삭제 추가" />
   </component>
 </project>

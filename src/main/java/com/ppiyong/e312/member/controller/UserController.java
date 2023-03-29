@@ -9,6 +9,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class UserController {
@@ -33,16 +35,16 @@ private final UserService userService;
 
         return userService.getUser();
     }
-    @GetMapping("/user1")
-    public String userController() {
 
-
-        return "user";
-    }
     @GetMapping("/hello")
     public String hello(){
 
         return "hello";
+    }
+    @GetMapping("/userlist")
+    public List<UserDto> userlist(){
+
+        return userService.getList();
     }
 
 
