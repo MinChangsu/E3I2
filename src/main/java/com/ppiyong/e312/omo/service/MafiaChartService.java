@@ -15,5 +15,7 @@ public class MafiaChartService {
     public List<Person> MafiaChartList(){
         return mafiaChartRepository.findAll();
     }
-
+    public void person(Person person){
+        mafiaChartRepository.save(person);
+    }
 }
