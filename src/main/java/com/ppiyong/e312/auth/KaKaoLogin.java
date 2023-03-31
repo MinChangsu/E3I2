@@ -21,7 +21,7 @@ public class KaKaoLogin {
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
 
-    private final String kakaoOauth2ClinetId = "781439d4c65490bbf7fa59a3bee09329";
+    private final String kakaoOauth2ClinetId = "1af93a8bebf7496a0dcba1c3df2126de";
     private final String frontendRedirectUrl = "https://web-piyong-front-luj2cldtwtwnh.sel3.cloudtype.app/kakaologin";
 
 
