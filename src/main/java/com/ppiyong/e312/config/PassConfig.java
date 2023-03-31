@@ -8,6 +8,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class PassConfig {
@@ -21,6 +22,14 @@ public class PassConfig {
             AuthenticationConfiguration authenticationConfiguration
     ) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    @Configuration
+    public class EtcConfig {
+        @Bean
+        public RestTemplate restTemplate() {
+            return new RestTemplate();
+        }
     }
     }
 
