@@ -18,4 +18,7 @@ public class StreamingService {
         return streamingRepository.findAll();
     }
 
+    public void streaming(Streaming streaming) {
+        streamingRepository.save(streaming);
+    }
 }

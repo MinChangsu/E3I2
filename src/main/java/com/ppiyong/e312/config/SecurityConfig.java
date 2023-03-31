@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/", "/hello","/*")
+                .antMatchers("/", "/hello","/*","https://web-piyong-front-luj2cldtwtwnh.sel3.cloudtype.app")
                 .permitAll()
                 .antMatchers("/user")
                 .hasAuthority("MEMBER")
