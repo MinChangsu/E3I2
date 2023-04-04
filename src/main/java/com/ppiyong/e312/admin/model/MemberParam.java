@@ -11,6 +11,9 @@ public class MemberParam {
     String searchType;
     String searchValue;
 
+    int id;
+    String Name;
+
 
     /*
     limit 0, 10  --> pageIndex: 1
@@ -37,5 +40,25 @@ public class MemberParam {
         if(pageSize < 10){
             pageSize = 10;
         }
+    }
+    public String getQueryString(){
+
+        init();
+
+        StringBuilder sb = new StringBuilder();
+
+        if(searchType != null && searchType.length() > 0) {
+            sb.append(String.format("searchType=%s", searchType));
+        }
+
+        if(searchType != null && searchType.length() > 0) {
+            if(sb.length() > 0){
+                sb.append("&");
+            }
+            sb.append(String.format("searchValue=%s", searchValue));
+        }
+
+        return sb.toString();
+
     }
 }

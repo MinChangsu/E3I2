@@ -2,7 +2,7 @@ package com.ppiyong.e312.admin.controller;
 
 
 import com.ppiyong.e312.admin.MemberService;
-import com.ppiyong.e312.admin.dto.MemberDto;
+
 import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.auth.PrincipalDetails;
 import com.ppiyong.e312.member.model.UserDto;
@@ -12,13 +12,14 @@ import com.ppiyong.e312.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RequiredArgsConstructor
-@RestController
+@Controller
 public class AdminController {
 
     private final UserService userService;
@@ -26,11 +27,15 @@ public class AdminController {
     private final PostService postService;
 
 
-    @GetMapping("/admin/main.do")
+    @GetMapping("/a")
     public String main(){
-        return "admin/main";
+        return "/admin/main";
     }
 
+    @GetMapping("/b")
+    public String main2(){
+        return "/admin/main2";
+    }
 
     @GetMapping("/admin/user")
     public UserDto parseUser(@RequestParam String id) {
@@ -43,15 +48,6 @@ public class AdminController {
     }
 
     @Transactional
-    @GetMapping("/admin/memberList")
-    public List<MemberDto> memberList(
-            @RequestParam(required=false,defaultValue="")
-            String id){
-
-        return memberService.memberList();
-    }
-
-    @Transactional
     @GetMapping("/admin/postList")
     public List<PostResponseDto> postList(
             @RequestParam(required=false,defaultValue="")
@@ -60,18 +56,14 @@ public class AdminController {
         return postService.getPostAll(title);
     }
 
-    @PutMapping("/admin/roleUpdate")
-    public ResponseEntity RoleUpdate(@RequestBody Role role){
-//        Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
-//        PrincipalDetails principalDetails=(PrincipalDetails) authentication.getPrincipal();
-//        User user=principalDetails.getUser();
-//        int id=user.getId();
-
-        PrincipalDetails principalDetails=(PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        int id=principalDetails.getUser().getId();
-
-        return memberService.update(id, role);
-    }
+//    @PutMapping("/admin/roleUpdate")
+//    public ResponseEntity RoleUpdate(@RequestBody Role role){
+//
+//        PrincipalDetails principalDetails=(PrincipalDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//        int id=principalDetails.getUser().getId();
+//
+//        return memberService.update(id, role);
+//    }
 
     @DeleteMapping("/admin/memberDelete")
     public ResponseEntity memberDelete(){
@@ -80,10 +72,6 @@ public class AdminController {
 
         return memberService.delete(id);
     }
-
-
-
-
 
 
 }

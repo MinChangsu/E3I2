@@ -1,18 +1,18 @@
 package com.ppiyong.e312.admin.service;
 
 import com.ppiyong.e312.admin.MemberService;
-import com.ppiyong.e312.admin.dto.MemberDto;
-import com.ppiyong.e312.admin.mapper.MemberMapper;
-import com.ppiyong.e312.admin.model.MemberParam;
-import com.ppiyong.e312.admin.model.Role;
 import com.ppiyong.e312.admin.repository.MemberRepository;
 import com.ppiyong.e312.member.entity.User;
+import com.ppiyong.e312.member.model.UserDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +23,6 @@ import java.util.Optional;
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
-    private final MemberMapper memberMapper;
-
-
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -33,66 +30,77 @@ public class MemberServiceImpl implements MemberService {
 
     }
 
-//  mapper에서 사용
     @Override
-    public List<MemberDto> list(MemberParam parameter) {
-
-        long totalCount = memberMapper.selectListCount(parameter);
-
-        List<MemberDto> list = memberMapper.selectList(parameter);
-
-        if(!CollectionUtils.isEmpty(list)){
-            int i = 0;
-            for(MemberDto x : list){
-                x.setTotalCount(totalCount);
-                x.setSeq(totalCount - parameter.getPageStart() - i );
-                i++;
-            }
-        }
-        return list;
+    public List<User> list() {
+        return memberRepository.findAll();
     }
 
-
     @Override
-    public List<MemberDto> memberList() {
-
-        List<User> list = memberRepository.findAll();
-        List<MemberDto> memberList = new ArrayList<>();
-
-        for (User u : list) {
-            memberList.add(new MemberDto(u));
+    public UserDto detail(int id) {
+        Optional<User> optionalMember = memberRepository.findById(id);
+        if(!optionalMember.isPresent()){
+            return null;
         }
 
-        return memberList;
+        User member = optionalMember.get();
+
+        return UserDto.of(member);
     }
 
-
-    @Override
-    public MemberDto getUser(int id) {
-
-            Optional<User> user = memberRepository.findById(id);
-
-            if (user.isPresent()) {
-
-                return new MemberDto(user.get());
-            } else {
-                return null;
-            }
-        }
-
-    @Override
-    public ResponseEntity update(int id, Role memberDto) {
-        User user=memberRepository.findByRole(memberDto).get(id);
-        user.update(memberDto);
-        memberRepository.save(user);
-
-        return ResponseEntity.ok(null);
-    }
 
     @Override
     public ResponseEntity delete(int id) {
         memberRepository.deleteById(id);
         return ResponseEntity.ok("멤버 삭제요청 완료");
+    }
+
+    @Override
+    public boolean updateStatus(int id, String userStatus) {
+
+        Optional<User> optionalMember = memberRepository.findById(id);
+        if(!optionalMember.isPresent()){
+            throw new UsernameNotFoundException("회원 정보가 존재하지 않습니다.");
+        }
+
+        User member = optionalMember.get();
+
+        member.setUserStatus(userStatus);
+        memberRepository.save(member);
+
+        return true;
+    }
+
+    @Override
+    public Page<User> paging(Pageable pageable) {
+        int page = pageable.getPageNumber() -1;
+        int pageLimit = 10; // 한 페이지에 보여줄 글 갯수
+        Page<User> member =
+        memberRepository.findAll(PageRequest.of(page, pageLimit, Sort.by(Sort.Direction.DESC,"id")));
+
+        Page<User> users = member.map( user -> new User(user.getId(), user.getName(), user.getUsername(), user.getEmail(), user.getCreate_at(), user.getUserStatus()));
+
+        return users;
+
+    }
+
+    @Override
+    public Page<User> SearchList(String searchKeyword, Pageable pageable) {
+
+
+        return memberRepository.findAllByNameContaining(searchKeyword,pageable);
+    }
+
+    @Override
+    public List<UserDto> findAll() {
+
+        List<User> userList = memberRepository.findAll();
+        List<UserDto> userDtoList = new ArrayList<>();
+
+        for( User u : userList ){
+            userDtoList.add(UserDto.of(u));
+
+        }
+        return userDtoList;
     }
 
 
