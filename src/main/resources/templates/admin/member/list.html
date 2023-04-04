@@ -43,33 +43,23 @@
             font-weight: bold;
             color: red;
         }
+
+
     </style>
     <body>
-            <h1>관리자 회원 관리</h1>
-        <div>
-            <a href="/admin/main.do">관리자 메인</a>
-            |
-            <a href="/admin/member/list.do"> 회원 관리 </a>
-            |
-            <a href="#"> 카테고리 관리 </a>
-            |
-            <a href="#"> 강의 관리 </a>
-            |
-            <a href="/member/logout"> 로그아웃 </a>
-            <br/>
-            <hr>
-        </div>
+
+    <img th:src="@{img/header.png}"/>
 
         <div class="list">
 
             <div class="search-form">
                 <p class="total-count"><span th:text="${totalCount}"></span>개</p>
+
+
                 <form method="get">
                 <select name="searchType">
                     <option value="all">전체</option>
-                    <option th:selected="${#strings.equals(param.searchType, 'userId')}" value="userId">아이디</option>
-                    <option th:selected="${#strings.equals(param.searchType, 'userName')}" value="userName">이름</option>
-                    <option th:selected="${#strings.equals(param.searchType, 'phone')}" value="phone">연락처</option>
+                    <option th:selected="${#strings.equals(param.searchType, 'id')}" value="userId">아이디</option>
                 </select>
                 <input th:value="${param.searchValue}" type="search" name="searchValue" placeholder="검색어를 입력"/>
                 <button type="submit"> 검색</button>
@@ -82,50 +72,72 @@
                 <tr>
                         <th> NO </th>
                         <th>
-                            아이디(이메일)
-                        </th>
-                        <th>
                             이름
                         </th>
                         <th>
-                            연락처
+                            유저이름
                         </th>
                         <th>
-                            이메일 인증 여부
+                            이메일
+                        </th>
+                        <th>
+                            등급
                         </th>
                         <th>
                             가입일
-                        </th>
-                        <th>
-                            관리자여부
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <!--  타임리프 for문으로 컨트롤러에서 보내준 list데이터를 가져옴 -->
-                    <tr th:each="x : ${list}">
-                        <td th:text="${x.seq}">1</td>
-                        <td th:text="${x.id}">mn99108@naver.com</td>
-                        <td th:text="${x.userName}">chan</td>
-                        <td th:text="${x.password}">010-1111-2222</td>
+                    <tr th:each="member : ${memberList}">
+                        <td th:text="${member.id}"></td>
+                        <td >
+                            <a th:text="${member.name}"
+                               th:href="${'detail.do?id=' + member.id}">
+                            </a>
+                        </td>
+                        <td th:text="${member.username}"></td>
+                        <td th:text="${member.email}"></td>
+                        <td th:text="${member.userStatus}"></td>
                         <td>
-                            <p th:text="${x.create_at}">2021.01.01</p>
+                            <p th:text="${member.create_at}">2021.01.01</p>
                         </td>
 
                     </tr>
-
                 </tbody>
 
             </table>
+
+            <div class="pager">
+            <!-- 첫번째 페이지로 이동 -->
+            <a th:href="@{/list.do(page=1)}">First</a>
+            <!-- 이전 링크 활성화 비활성화 -->
+            <a th:href="${memberList.first} ? '#' : @{/list.do(page=${memberList.number})}">prev</a>
+
+            <!-- 페이지 번호 링크(현재 페이지는 숫자만)-->
+            <span th:each="page: ${#numbers.sequence(startPage, endPage)}">
+            <!-- 현재페이지는 링크 없이 숫자만 -->
+                <span th:if="${page == memberList.number + 1}" th:text="${page}"></span>
+                <!-- 현재페이지 번호가 아닌 다른 페이지번호에는 링크를 보여줌 -->
+                <span th:unless="${page == memberList.number + 1}">
+                    <a th:href="@{/list.do(page=${page})}" th:text="${page}"></a>
+                </span>
+            </span>
+            <!-- 다음 링크 활성화 비활성화-->
+            <a th:href="${memberList.last} ? '#' : @{/list.do(page=${memberList.number + 2})}">next</a>
+            <!-- 마지막 페이지로 이동 -->
+            <a th:href="@{/list.do(page=${memberList.totalPages})}">Last</a>
+            </div>
 
             <div class="pager" th:utext="${pager}">
 
             </div>
 
-
             </div>
-
         </div>
+    <div class="footer_img">
+    </div>
 
     </body>
 </html>

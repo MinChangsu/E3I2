@@ -6,13 +6,22 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+  mybatis:
+    mapper-locations: mybatis/**/*.xml
+    configuration:
+      map-underscore-to-camel-case: true
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 spring:
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+
   datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/minicampus
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://svc.sel3.cloudtype.app:31121/e3i2?serverTimezone=Asia/Seoul
-    username: root
-    password: 1234
+    username: minicampus_user
+    password: a1234
   security:
     oauth2:
       client:
@@ -61,10 +70,6 @@ spring:
     open-in-view: false
     generate-ddl: true
 
-  mybatis:
-    mapper-locations: mybatis/**/*.xml
-    configuration:
-      map-underscore-to-camel-case: true
-      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 
 
